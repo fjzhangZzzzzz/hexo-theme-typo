@@ -161,29 +161,46 @@ a {
 }
 
 .footer {
-  padding: 24px 0;
-  font-size: 0.875rem;
-  color: var(--font-color-extra);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.footer-content {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.footer span {
-  text-align: center;
-  margin-bottom: 8px;
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.footer a {
-  color: var(--font-color-extra);
-  transition: color ease-in-out 0.5s;
+.footer-item a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.footer a:hover {
-  color: var(--font-color);
-  transition: color ease-in-out 0.5s;
+.footer-item a:hover {
+  color: var(--primary-color);
+}
+
+.footer-item img {
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 0.25em;
+}
+
+.footer-item .separator {
+  color: var(--text-color-secondary);
+  margin: 0 0.5rem;
 }
 
 .archives {

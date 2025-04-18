@@ -7,3 +7,33 @@ menu:
   about: /about
 
 copyright: 2024 typo
+
+footer:
+  # 版权信息
+  copyright: true
+  copyright_text: 2024 typo
+  
+  # 备案信息
+  beian:
+    enable: false
+    icp:  # ICP备案号
+    gongan:  # 公安备案号
+    gongan_icon:  # 公安备案图标地址
+  
+  # 统计信息
+  statistics:
+    enable: false
+    text:  # 统计信息文本
+  
+  # 技术支持信息
+  powered:
+    enable: true
+    text: Powered by Hexo & typo
+  
+  # 社交链接
+  social:
+    enable: false
+    links:
+      github: https://github.com/yourusername
+      twitter: https://twitter.com/yourusername
+      # 可以添加更多社交链接
