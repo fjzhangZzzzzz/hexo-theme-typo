@@ -49,11 +49,26 @@
     <% if (theme.footer.social && theme.footer.social.enable && theme.footer.social.links){ %>
     <div class="footer-item social-links">
       <% for (const [platform, url] of Object.entries(theme.footer.social.links)){ %>
-      <a href="<%= url %>" target="_blank" rel="noopener" title="<%= platform %>">
-        <%- partial('_partial/svg/' + platform) %>
+      <a href="<%= url %>" target="_blank" rel="noopener" title="<%= platform %>" class="social-link">
+        <span class="social-icon"><%= getSocialIcon(platform) %></span>
+        <span class="social-text"><%= platform %></span>
       </a>
       <% } %>
     </div>
     <% } %>
   </div>
 </footer>
+
+<% function getSocialIcon(platform) {
+  const icons = {
+    github: 'G',
+    twitter: 'T',
+    weibo: 'W',
+    zhihu: '知',
+    bilibili: 'B',
+    email: '@',
+    rss: 'RSS',
+    // 可以添加更多平台的图标
+  };
+  return icons[platform] || platform.charAt(0).toUpperCase();
+} %>

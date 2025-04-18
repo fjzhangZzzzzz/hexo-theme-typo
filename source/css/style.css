@@ -203,6 +203,37 @@ a {
   margin: 0 0.5rem;
 }
 
+.footer-item.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-item .social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--color-background-secondary);
+  transition: all 0.3s ease;
+}
+
+.footer-item .social-link:hover {
+  background: var(--color-background-hover);
+  transform: translateY(-2px);
+}
+
+.footer-item .social-icon {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.footer-item .social-text {
+  font-size: 0.9em;
+}
+
 .archives {
   display: flex;
   flex-direction: column;
